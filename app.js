@@ -37,5 +37,31 @@ if (x%2 == 0) {
     console.log("้เลขคี่")
 }
 
+//เรียกใช้ function รับค่า และ การ return ค่า
+
+function getNumber() {
+    return 100*100
+}
+
+let total = getNumber()
+console.log("ผลรวม = ",total)
+
+function setSalary(salary) {
+    let bonus = 1000;
+    return salary+bonus
+}
+
+let total1 = setSalary(15000)
+console.log(" เงินเดือนรวม = ",total1) 
+
+//Array Properties & function
+let color = ["แดง","เหลือง","เขียว"]
+let count = color.length //จำนวนของ arrayทั้งหมด
+let result = color.sort() //เรียงลำดับสมาชิก ของ array
+
+console.log(count)
+console.log(result)
+
+
 
 
