@@ -6,10 +6,12 @@
     <title>Javascript Basic</title>
 </head>
 <body>
-   <h1>ทาย หัว ก้อย </h1>
-   <h3>คุณทาย : <span id="your-answer"></span></h3>
-   <h3>คำตอบที่ได้ : <span id="random-answer"></span></h3>
-   <h3>คะแนนที่ตอบดได้ : <span id="sum"></span></h3>
+   <h1>โปรแกรทแปลงหน่วย </h1>
+   <input id="inputValue" type="text">
+    <div id="answer_sectionC"></div>
+    <div id="answer_sectionF"></div>
+    <button onclick="toCelsiusProgram(document.getElementById('inputValue').value)">องศา C</button>
+    <button onclick="toFahrenheitProgram(document.getElementById('inputValue').value)">องศา F</button>
     <script src="demo.js"></script>
 </body>
 </html>
