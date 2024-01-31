@@ -1,42 +1,26 @@
-// let round = prompt("เล่นกี่รอบ ?")
-// sum = 0
-// for (let i = 0; i < round; i++) {
-//     let answer = prompt("หัว หรือ ก้อย ")
-//     let random_answer = ""
-//     if (Math.floor(Math.random() *10) <=4) {
-//         random_answer = "หัว"
-//         document.getElementById("random-answer").innerHTML +=random_answer +  " , "
-//         document.getElementById("your-answer").innerHTML +=answer +" , "
-//     }else{
-//         random_answer = "ก้อย"
-//         document.getElementById("random-answer").innerHTML +=random_answer +  " , "
-//         document.getElementById("your-answer").innerHTML +=answer +" , "
-//     }
-//     if (answer == random_answer) {
-//         alert("ยินดีด้วยตอบถูก")
-//         sum+=1
-//     }else{
-//         alert("เสียใจด้วยตอบผิด")
-//     }
-//     document.getElementById("sum").innerHTML = sum
-// }
+// //ลบค่าสมาชิกที่ซ้ำกันใน Array
+// const myArr = [10,20,20,30,30,30,40,40,40,40]
+// // const result = Array.from(new Set(myArr))
+// const result = [...new Set(myArr)]
+// console.log(myArr)
+// console.log(result)
 
-function toCelsius(fahrenheit) {
-    let value = (fahrenheit - 32) * 5 / 9
-    return "องศา "+ value.toFixed(2) + " C";
-}
+// //ลดรูปการเขียนเงื่อนไขด้วย Ternary Operator
+// let score = 49
+// let result 
+// //Ternary Operator ? :
+// result = score>=50 ? "สอบผ่าน" : "ไม่ผ่าน"
 
-function toFahrenheit(celsius) {
-    let value = (celsius * 9 / 5) + 32
-    return "องศา "+ value.toFixed(2) + " F";
-}
-function display(elementId, value) {
-    document.getElementById(elementId).innerHTML = value
-}
-function toCelsiusProgram(value) {
-    display("answer_sectionC",toCelsius(value))
-}
+// console.log(result)
 
-function toFahrenheitProgram(value) {
-    display("answer_sectionF",toFahrenheit(value))
-}
+//การแปลงชนิดข้อมูลด้วยสัญลักษณ์
+    //boolean -> number
+console.log(typeof +true)
+console.log(typeof +false)
+console.log("...............")
+    //number -> boolean
+const isTrue=!0
+const isFalse=!1
+console.log(typeof isTrue)
+console.log(typeof isFalse)
+
